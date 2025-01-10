@@ -10,6 +10,9 @@
     </head>
     <body>
         <header>
+            <h1>My personal portfolio</h1>
+        </header>
+        <div class="container">
             <nav role="navigation" aria-label="Main Navigation">
                 <button id="menu-toggle" aria-label="Toggle Navigation Menu">☰</button>
                 <ul id="nav-menu">
@@ -20,82 +23,79 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-        </header>
-        <main>
-            <h1>Welcome to my web page!</h1>
-            <p>This is my personal web page portfolio!</p>
-            <section id="about-me" aria-label="About Me">
-                <h2>About Me</h2>
-                <p>Just a guy trying to pass this Coursera assignment!</p>
-            </section>
-            <section id="projects" aria-label="Projects">
-                <h2>Projects</h2>
-                <article>
-                    <h3>Project 1</h3>
-                    <figure>
-                        <img src="project1.jpg" alt="Project 1 Screenshot" class="responsive-img project-img">
-                        <figcaption>My first project</figcaption>
-                    </figure>
-                    <p>This was my first project and I learned a lot of the basics whilst implementing it.</p>
-                </article>
-                <article>
-                    <h3>Project 2</h3>
-                    <figure>
-                        <img src="project2.jpg" alt="Project 2 Screenshot" class="responsive-img project-img">
-                        <figcaption>My second project</figcaption>
-                    </figure>
-                    <p>This was my second project and it helped me hone my craft as a developer.</p>
-                </article>
-                <article>
-                    <h3>Project 3</h3>
-                    <figure>
-                        <img src="project3.jpg" alt="Project 3 Screenshot" class="responsive-img project-img">
-                        <figcaption>My third project</figcaption>
-                    </figure>
-                    <p>This was my third project and it was the toughest one yet!</p>
-                </article>
-            </section>
-            <section id="skills" aria-label="Skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Node.js</li>
-                    <li>Python</li>
-                    <li>SQL</li>
-                    <li>Git</li>
-                </ul>
-            </section>
-            <section id="contact" aria-label="Contact">
-                <h2>Contact</h2>
-                <form action="submit_form.php" method="post">
-                    <table>
-                        <tr>
-                            <td><label for="name">Name:</label></td>
-                            <td><input type="text" id="name" name="name" required></td>
-                        </tr>
-                        <tr>
-                            <td><label for="email">Email:</label></td>
-                            <td><input type="email" id="email" name="email" required></td>
-                        </tr>
-                        <tr>
-                            <td><label for="message">Message:</label></td>
-                            <td><textarea id="message" name="message" rows="4" required></textarea></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" style="text-align: center;">
-                                <button type="submit">Send</button>
-                            </td>
-                        </tr>
-                    </table>
-                </form>
-            </section>
-        </main>
-        <script>
-            
-        </script>
-        <script src="scripts.js"></script>
+            <main>
+                <h1 id="home">Welcome to my web page!</h1>
+                <p>This is my personal web page portfolio!</p>
+                <section id="about-me" aria-label="About Me">
+                    <h2>About Me</h2>
+                    <p>Just a guy trying to pass this Coursera assignment!</p>
+                </section>
+                <section id="projects" aria-label="Projects">
+                    <h2>Projects</h2>
+                    <article>
+                        <h3>Project 1</h3>
+                        <figure>
+                            <img src="project1.jpg" alt="Project 1 Screenshot" class="responsive-img project-img">
+                            <figcaption>My first project</figcaption>
+                        </figure>
+                        <p>This was my first project and I learned a lot of the basics whilst implementing it.</p>
+                    </article>
+                    <article>
+                        <h3>Project 2</h3>
+                        <figure>
+                            <img src="project2.jpg" alt="Project 2 Screenshot" class="responsive-img project-img">
+                            <figcaption>My second project</figcaption>
+                        </figure>
+                        <p>This was my second project and it helped me hone my craft as a developer.</p>
+                    </article>
+                    <article>
+                        <h3>Project 3</h3>
+                        <figure>
+                            <img src="project3.jpg" alt="Project 3 Screenshot" class="responsive-img project-img">
+                            <figcaption>My third project</figcaption>
+                        </figure>
+                        <p>This was my third project and it was the toughest one yet!</p>
+                    </article>
+                </section>
+                <section id="skills" aria-label="Skills">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>Git</li>
+                    </ul>
+                </section>
+                <section id="contact" aria-label="Contact">
+                    <h2>Contact</h2>
+                    <form id="contact-form" onsubmit="contact()">
+                        <table>
+                            <tr>
+                                <td><label for="name">Name:</label></td>
+                                <td><input type="text" id="name" name="name" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="email">Email:</label></td>
+                                <td><input type="email" id="email" name="email" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="message">Message:</label></td>
+                                <td><textarea id="message" name="message" rows="4" required></textarea></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="text-align: center;">
+                                    <button id="contact-me" type="submit">Send</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </section>
+            </main>
+        </div>
+        <script src="script.js"></script>
     </body>
 </html>
