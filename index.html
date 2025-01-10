@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My personal portfolio</title>
+        <meta name="description" content="This is my personal web page portfolio showcasing my projects, skills, and contact information.">
+        <meta name="keywords" content="web development, portfolio, projects, skills, contact">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav role="navigation" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-me">About Me</a></li>                    
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Welcome to my web page!</h1>
+            <p>This is my personal web page portfolio!</p>
+            <section id="about-me" aria-label="About Me">
+                <h2>About Me</h2>
+                <p>Describe yourself here.</p>
+            </section>
+            <section id="projects" aria-label="Projects">
+                <h2>Projects</h2>
+                <article>
+                    <h3>Project 1</h3>
+                    <figure>
+                        <img src="project1.jpg" alt="Project 1 Screenshot">
+                        <figcaption>My first project</figcaption>
+                    </figure>
+                    <p>This was my first project and I learned a lot of the basics whilst implementing it.</p>
+                </article>
+                <article>
+                    <h3>Project 2</h3>
+                    <figure>
+                        <img src="project2.jpg" alt="Project 2 Screenshot">
+                        <figcaption>My second project</figcaption>
+                    </figure>
+                    <p>This was my second project and it helped me hone my craft as a developer.</p>
+                </article>
+                <article>
+                    <h3>Project 3</h3>
+                    <figure>
+                        <img src="project3.jpg" alt="Project 3 Screenshot">
+                        <figcaption>My third project</figcaption>
+                    </figure>
+                    <p>This was my third project and it was the toughest one yet!</p>
+                </article>
+            </section>
+            <section id="skills" aria-label="Skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>Git</li>
+                </ul>
+            </section>
+            <section id="contact" aria-label="Contact">
+                <h2>Contact</h2>
+                <form action="submit_form.php" method="post">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <script src="scripts.js"></script>
+    </body>
+</html>
