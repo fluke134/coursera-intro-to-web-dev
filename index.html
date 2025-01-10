@@ -11,7 +11,8 @@
     <body>
         <header>
             <nav role="navigation" aria-label="Main Navigation">
-                <ul>
+                <button id="menu-toggle" aria-label="Toggle Navigation Menu">☰</button>
+                <ul id="nav-menu">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about-me">About Me</a></li>                    
                     <li><a href="#projects">Projects</a></li>
@@ -25,14 +26,14 @@
             <p>This is my personal web page portfolio!</p>
             <section id="about-me" aria-label="About Me">
                 <h2>About Me</h2>
-                <p>Describe yourself here.</p>
+                <p>Just a guy trying to pass this Coursera assignment!</p>
             </section>
             <section id="projects" aria-label="Projects">
                 <h2>Projects</h2>
                 <article>
                     <h3>Project 1</h3>
                     <figure>
-                        <img src="project1.jpg" alt="Project 1 Screenshot">
+                        <img src="project1.jpg" alt="Project 1 Screenshot" class="responsive-img project-img">
                         <figcaption>My first project</figcaption>
                     </figure>
                     <p>This was my first project and I learned a lot of the basics whilst implementing it.</p>
@@ -40,7 +41,7 @@
                 <article>
                     <h3>Project 2</h3>
                     <figure>
-                        <img src="project2.jpg" alt="Project 2 Screenshot">
+                        <img src="project2.jpg" alt="Project 2 Screenshot" class="responsive-img project-img">
                         <figcaption>My second project</figcaption>
                     </figure>
                     <p>This was my second project and it helped me hone my craft as a developer.</p>
@@ -48,7 +49,7 @@
                 <article>
                     <h3>Project 3</h3>
                     <figure>
-                        <img src="project3.jpg" alt="Project 3 Screenshot">
+                        <img src="project3.jpg" alt="Project 3 Screenshot" class="responsive-img project-img">
                         <figcaption>My third project</figcaption>
                     </figure>
                     <p>This was my third project and it was the toughest one yet!</p>
@@ -70,24 +71,31 @@
             <section id="contact" aria-label="Contact">
                 <h2>Contact</h2>
                 <form action="submit_form.php" method="post">
-                    <div>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div>
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
-                    </div>
-                    <div>
-                        <button type="submit">Send</button>
-                    </div>
+                    <table>
+                        <tr>
+                            <td><label for="name">Name:</label></td>
+                            <td><input type="text" id="name" name="name" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email:</label></td>
+                            <td><input type="email" id="email" name="email" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="message">Message:</label></td>
+                            <td><textarea id="message" name="message" rows="4" required></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center;">
+                                <button type="submit">Send</button>
+                            </td>
+                        </tr>
+                    </table>
                 </form>
             </section>
         </main>
+        <script>
+            
+        </script>
         <script src="scripts.js"></script>
     </body>
 </html>
